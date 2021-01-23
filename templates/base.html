@@ -1,10 +1,27 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodeDaddies</title>   
+    <title>Codedaddies List</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo">Codedaddies List</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
     <h2>Testing to see if this works.</h2>
 </body>
 </html>

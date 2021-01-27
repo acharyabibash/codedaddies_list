@@ -23,8 +23,11 @@ def new_search(request):
     final_url = BASE_CRAIGSLIST_URL.format(quote_plus(search))
     response = requests.get(final_url)
     data = response.text
-    print(data)
-    print(search)
+    soup = BeautifulSoup(data,features = 'html.parser')
+    post_titles = soup.find_all('a',{'class':'result-title'})
+    print(post_titles[0].text)
+    # print(data)
+    # print(search)
     stuff_for_frontend = {
         'search':search,
     }

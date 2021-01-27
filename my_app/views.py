@@ -1,4 +1,8 @@
+import requests
+
 from django.shortcuts import render
+
+from bs4 import BeautifulSoup
 
 # Create your views here.
 def home(request):
